@@ -1,10 +1,10 @@
-# Pre-requisites
+## Pre-requisites
  
 Install Git, MongoDB & NodeJS (if you haven't);
 
 The project uses GitBash which comes installed with Git.
 
-# Package dependencies
+## Package dependencies
 
 Once you have extracted the project in you preferred location, navigate to the bash terminal inside vs code.
 
@@ -12,7 +12,7 @@ Run the following command inside  to install the project dependencies:
 
 npm install
 
-# ENV Variables
+## ENV Variables
 
 In the .env file, add the following:
 
@@ -26,7 +26,7 @@ AUTH_APP_PASS : *This is the password to your email account. Because Google does
 
 API_KEY : *Retrieve API_KEY from this website* https://www.exchangerate-api.com/
 
-# Run The Program
+## Run The Program
 
 Once the above requirements have been fulfilled, run the following command;
 
@@ -34,6 +34,6 @@ npx nodemon index
 
 This command will start the server as well as initiate connection to the database.
 
-# Enjoy
+## Enjoy
 
 ENJOY
