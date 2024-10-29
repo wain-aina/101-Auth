@@ -206,7 +206,7 @@ app.post('/forgot', async (req, res, next) => {
         await user.save();
 
         // Step 4: Send reset email
-        const reset_url = `http://qkmhs6l4-3000.uks1.devtunnels.ms/reset/${token}`;
+        const reset_url = `http://${req.headers.host}/reset/${token}`;
         const mailOptions = {
             from: process.env.AUTH_EMAIL,
             to: user.username,
