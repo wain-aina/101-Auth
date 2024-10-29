@@ -234,46 +234,23 @@
 
     <script>
 
-      // const ctx = document.getElementById('myChart');
-
-      // const newChart = new Chart(ctx, {
-      //   type: 'line',
-      //   data: {
-      //     labels: [100,110,120,130,140,150,160,170,180,190,200],
-      //     datasets: [{ 
-      //         data: [164,160,168,152,145,136],
-      //         label: "KSHS (6 months)",
-      //         borderColor: "#8e5ea2",
-      //         fill: false
-      //       },
-      //     ]
-      //   },
-      //   options: {
-      //     title: {
-      //       display: true,
-      //       text: 'Fluctuation points'
-      //     }
-      //   }
-      // });
-
       // async function getRate(){
       //   try {
-      //     const response = await fetch('https://v6.exchangerate-api.com/v6/427356ab5064bd717247de2a/pair/USD/KES')
-      //     const data = await response.json();
-      //     const result = Math.trunc(data.conversion_rate);
-      //     newChart.data.datasets[0].data.push(result);
-
-      //     newChart.update();
-      //   } catch(err){
-      //     console.log(err)
+      //     const response = await fetch(
+      //       `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/${process.env.CURRENCY_1}/${process.env.CURRENCY_2}`
+      //     );
+      //     const result = response.json();
+      //     const rate = result.conversion_rate;
+      //     data.push(rate);
+      //   } catch (err){
+      //     console.log(error);
       //   }
-      // };
+      // }
 
       // getRate();
-      
-    </script>
 
-    <script>
+      // var data = [];
+
       var data = generateDayWiseTimeSeries(new Date("22 Apr 2017").getTime(), 115, {
         min: 30,
         max: 90
